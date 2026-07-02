@@ -9,16 +9,18 @@ export default function AccordionItem({
     <div className="w-full rounded-lg bg-white shadow-md overflow-hidden">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-gray-50"
+        className="w-full flex items-center justify-between gap-3 px-4 sm:px-6 py-3 sm:py-4 text-left hover:bg-gray-50"
       >
-        <div>
-          <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+        <div className="min-w-0">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800">
+            {title}
+          </h3>
           {description && (
             <p className="text-sm text-gray-500">{description}</p>
           )}
         </div>
         <span
-          className={`text-gray-500 transition-transform duration-200 ${
+          className={`shrink-0 text-gray-500 transition-transform duration-200 ${
             isOpen ? "rotate-180" : ""
           }`}
         >
@@ -30,7 +32,7 @@ export default function AccordionItem({
         style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
       >
         <div className="overflow-hidden">
-          <div className="p-6 pt-0">{children}</div>
+          <div className="p-4 sm:p-6 pt-0">{children}</div>
         </div>
       </div>
     </div>
