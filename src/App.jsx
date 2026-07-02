@@ -5,6 +5,7 @@ import UserSearchFilter from "./UserSearch/UserSearchFilter";
 import BMICalculator from "./BMI Calculator/BMICalculator";
 import ColorPicker from "./ColorPicker/ColorPicker";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
+import Stopwatch from "./Stopwatch/Stopwatch";
 
 export default function App() {
   return (
@@ -47,6 +48,12 @@ export default function App() {
           description="Switch between tabs to reveal different content."
         >
           <TabSwitcher />
+        </AccordionItem>
+        <AccordionItem
+          title="Stopwatch"
+          description="A React Stopwatch : Start | Stop | Reset"
+        >
+          <Stopwatch />
         </AccordionItem>
       </Accordion>
     </div>
