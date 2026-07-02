@@ -1,11 +1,22 @@
-export default function AccordionItem({ title, isOpen, onToggle, children }) {
+export default function AccordionItem({
+  title,
+  description,
+  isOpen,
+  onToggle,
+  children,
+}) {
   return (
     <div className="w-full rounded-lg bg-white shadow-md overflow-hidden">
       <button
         onClick={onToggle}
         className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-gray-50"
       >
-        <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+        <div>
+          <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+          {description && (
+            <p className="text-sm text-gray-500">{description}</p>
+          )}
+        </div>
         <span
           className={`text-gray-500 transition-transform duration-200 ${
             isOpen ? "rotate-180" : ""

@@ -16,13 +16,22 @@ export default function App() {
         </p>
       </div>
       <Accordion defaultOpenIndex={0}>
-        <AccordionItem title="React To Do List">
+        <AccordionItem
+          title="React To Do List"
+          description="Add, complete, and remove tasks from a simple to-do list."
+        >
           <TodoList />
         </AccordionItem>
-        <AccordionItem title="User Search Filter">
+        <AccordionItem
+          title="User Search Filter"
+          description="Filter a list of users by name in real time."
+        >
           <UserSearchFilter />
         </AccordionItem>
-        <AccordionItem title="BMI Calculator">
+        <AccordionItem
+          title="BMI Calculator"
+          description="Calculate your Body Mass Index from height and weight."
+        >
           <BMICalculator />
         </AccordionItem>
       </Accordion>
