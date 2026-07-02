@@ -6,6 +6,7 @@ import BMICalculator from "./BMI Calculator/BMICalculator";
 import ColorPicker from "./ColorPicker/ColorPicker";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
 import Stopwatch from "./Stopwatch/Stopwatch";
+import StarRating from "./StarRating/StarRating";
 
 export default function App() {
   return (
@@ -54,6 +55,12 @@ export default function App() {
           description="A React Stopwatch : Start | Stop | Reset"
         >
           <Stopwatch />
+        </AccordionItem>
+        <AccordionItem
+          title="Star Rating"
+          description="Set Star rating using React"
+        >
+          <StarRating />
         </AccordionItem>
       </Accordion>
     </div>
