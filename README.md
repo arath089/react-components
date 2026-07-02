@@ -16,6 +16,16 @@ Built with [Vite](https://vite.dev). Each component lives in its own folder unde
 | `CharacterCounter` | Controlled inputs, derived state, real-time updates |
 | `WindowSize` | Custom hooks, `useEffect`, browser event listeners (`resize`), cleanup functions |
 
+## Progress
+
+- [ ] TodoList
+- [ ] UserSearch
+- [ ] BMI Calculator
+- [ ] TabSwitcher
+- [ ] ColorPicker
+- [ ] CharacterCounter
+- [ ] WindowSize
+
 ## Getting started
 
 ```bash
