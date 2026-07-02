@@ -3,6 +3,8 @@ import AccordionItem from "./Accordion/AccordionItem";
 import TodoList from "./TodoList/ToDoList";
 import UserSearchFilter from "./UserSearch/UserSearchFilter";
 import BMICalculator from "./BMI Calculator/BMICalculator";
+import ColorPicker from "./ColorPicker/ColorPicker";
+import TabSwitcher from "./TabSwitcher/TabSwitcher";
 
 export default function App() {
   return (
@@ -33,6 +35,18 @@ export default function App() {
           description="Calculate your Body Mass Index from height and weight."
         >
           <BMICalculator />
+        </AccordionItem>
+        <AccordionItem
+          title="Color Picker"
+          description="Mix red, green, and blue to preview a color and its hex value."
+        >
+          <ColorPicker />
+        </AccordionItem>
+        <AccordionItem
+          title="Tab Switcher"
+          description="Switch between tabs to reveal different content."
+        >
+          <TabSwitcher />
         </AccordionItem>
       </Accordion>
     </div>
