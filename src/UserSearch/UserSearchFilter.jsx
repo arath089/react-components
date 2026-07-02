@@ -17,16 +17,12 @@ export default function SearchFilter() {
   const resultCount = filteredUsers.length;
 
   return (
-    <div className="w-full max-w-xl rounded-lg bg-white p-6 shadow-md flex flex-col">
-      <h3 className="text-xl font-semibold text-gray-800">
-        User Search Filter
-      </h3>
-
+    <div className="flex flex-col">
       <input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search users..."
-        className="mt-4 rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
+        className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
       ></input>
 
       {query !== "" && (

@@ -27,9 +27,7 @@ export default function BMICalculator() {
       : "text-red-600";
 
   return (
-    <div className="w-full max-w-xl rounded-lg bg-white p-6 shadow-md flex flex-col gap-4">
-      <h3 className="text-xl font-semibold text-gray-800">BMI Calculator</h3>
-
+    <div className="flex flex-col gap-4">
       <label className="flex flex-col gap-1 text-sm font-medium text-gray-700">
         Height (in cms)
         <input

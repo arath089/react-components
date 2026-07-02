@@ -18,3 +18,8 @@ body {
   gap: 1.5rem;
   padding: 2rem;
 }
+
+.rock-salt {
+  font-family: "Honk", "Rock Salt", cursive;
+  font-variation-settings: "MORF" 15;
+}

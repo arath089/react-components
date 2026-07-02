@@ -25,10 +25,8 @@ export default function TodoList() {
   };
 
   return (
-    <div className="w-full max-w-xl rounded-lg bg-white p-6 shadow-md flex justify-center flex-col">
-      <h3 className="text-xl font-semibold text-gray-800">React To Do List</h3>
-
-      <div className="mt-4">
+    <div className="flex flex-col">
+      <div>
         <div className="flex gap-2">
           <input
             value={task}
