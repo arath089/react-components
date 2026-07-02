@@ -1,5 +1,9 @@
-function App() {
-  return <h1>React Components Practice</h1>
-}
+import TodoList from "./TodoList/ToDoList";
 
-export default App
+export default function App() {
+  return (
+    <div className="app">
+      <TodoList />
+    </div>
+  );
+}
