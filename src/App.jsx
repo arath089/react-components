@@ -7,6 +7,7 @@ import ColorPicker from "./ColorPicker/ColorPicker";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
 import Stopwatch from "./Stopwatch/Stopwatch";
 import StarRating from "./StarRating/StarRating";
+import OrderList from "./OrderList/OrderList";
 
 export default function App() {
   return (
@@ -61,6 +62,12 @@ export default function App() {
           description="Set Star rating using React"
         >
           <StarRating />
+        </AccordionItem>
+        <AccordionItem
+          title="Order List Filtering"
+          description="Browse a list of orders and filter them by status — shipped, pending, delivered, or cancelled."
+        >
+          <OrderList />
         </AccordionItem>
       </Accordion>
     </div>
