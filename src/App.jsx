@@ -8,6 +8,7 @@ import TabSwitcher from "./TabSwitcher/TabSwitcher";
 import Stopwatch from "./Stopwatch/Stopwatch";
 import StarRating from "./StarRating/StarRating";
 import OrderList from "./OrderList/OrderList";
+import DebouncedSearch from "./DebounceSearch/DebouncedSearch";
 
 export default function App() {
   return (
@@ -26,6 +27,12 @@ export default function App() {
           description="Add, complete, and remove tasks from a simple to-do list."
         >
           <TodoList />
+        </AccordionItem>
+        <AccordionItem
+          title="Debounced Search"
+          description="Search users with debounced input, delaying API calls until you stop typing to cut down on redundant requests. eg- 'Leanne', 'Ervin"
+        >
+          <DebouncedSearch />
         </AccordionItem>
         <AccordionItem
           title="User Search Filter"
