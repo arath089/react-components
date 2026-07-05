@@ -9,6 +9,7 @@ import Stopwatch from "./Stopwatch/Stopwatch";
 import StarRating from "./StarRating/StarRating";
 import OrderList from "./OrderList/OrderList";
 import DebouncedSearch from "./DebounceSearch/DebouncedSearch";
+import ThrottledSearch from "./ThrottledSearch/ThrottledSearch";
 
 export default function App() {
   return (
@@ -33,6 +34,12 @@ export default function App() {
           description="Search users with debounced input, delaying API calls until you stop typing to cut down on redundant requests. eg- 'Leanne', 'Ervin"
         >
           <DebouncedSearch />
+        </AccordionItem>
+        <AccordionItem
+          title="Throttled Submission"
+          description="Submit rapidly and watch throttling cap it to one API call per cooldown window, blocking the rest."
+        >
+          <ThrottledSearch />
         </AccordionItem>
         <AccordionItem
           title="User Search Filter"
