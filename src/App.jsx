@@ -10,6 +10,7 @@ import StarRating from "./StarRating/StarRating";
 import OrderList from "./OrderList/OrderList";
 import DebouncedSearch from "./DebounceSearch/DebouncedSearch";
 import ThrottledSearch from "./ThrottledSearch/ThrottledSearch";
+import AsyncAwait from "./Async/AsyncAwait";
 
 export default function App() {
   return (
@@ -82,6 +83,12 @@ export default function App() {
           description="Browse a list of orders and filter them by status — shipped, pending, delivered, or cancelled."
         >
           <OrderList />
+        </AccordionItem>
+        <AccordionItem
+          title="Async/Await Fetch API results"
+          description="Look up a user by ID with async/await, cancelling any in-flight request via AbortController when you submit again. eg- '1', '4'"
+        >
+          <AsyncAwait />
         </AccordionItem>
       </Accordion>
     </div>
