@@ -11,6 +11,7 @@ import OrderList from "./OrderList/OrderList";
 import DebouncedSearch from "./DebounceSearch/DebouncedSearch";
 import ThrottledSearch from "./ThrottledSearch/ThrottledSearch";
 import AsyncAwait from "./Async/AsyncAwait";
+import WordleGame from "./WordleGame/WordleGame";
 
 export default function App() {
   return (
@@ -41,6 +42,12 @@ export default function App() {
           description="Submit rapidly and watch throttling cap it to one API call per cooldown window, blocking the rest."
         >
           <ThrottledSearch />
+        </AccordionItem>
+        <AccordionItem
+          title="Wordle Game"
+          description="A Wordle clone built with useState for the guess grid and a global keydown listener wired up through useEffect. Each submitted letter is compared against the answer to color tiles green, yellow, or gray."
+        >
+          <WordleGame />
         </AccordionItem>
         <AccordionItem
           title="User Search Filter"
